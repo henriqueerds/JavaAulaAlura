@@ -6,11 +6,9 @@ public class Main {
         paulo.setCpf("065.566.564-34");
         paulo.setProfissao("Analista");
 
-        Conta contaDoPaulo = new Conta();
+        Conta contaDoPaulo = new Conta(132, 123432);
         contaDoPaulo.deposita(1000);
-        contaDoPaulo.setNumero(123432);
         contaDoPaulo.setTitular(paulo);
-        contaDoPaulo.setAgencia(1234);
 
         System.out.println("Titular da Conta: "+ contaDoPaulo.getTitular().getNome());
         System.out.println("CPF: "+ contaDoPaulo.getTitular().getCpf());
