@@ -8,6 +8,14 @@ public class TesteFuncionario {
         Gerente g1 = new Gerente();
         g1.setNome("Marcos");
         g1.setSalario(5000.0);
+        g1.setSenha(2222);
+
+        Administrador adm = new Administrador();
+        adm.setSenha(2222);
+
+        SistemaInterno si = new SistemaInterno();
+        si.autentica(g1);
+        si.autentica(adm);
 
         ControleBonif controle = new ControleBonif();
         controle.registra(g1);
