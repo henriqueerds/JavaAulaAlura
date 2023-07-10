@@ -1,6 +1,6 @@
 public class SistemaInterno {
     private int senha = 2222;
-    public void autentica (FauncionarioComSenha g) {
+    public void autentica (SenhaDoSistema g) {
         boolean autenticou = g.autentica(this.senha);
         if (autenticou) {
             System.out.println("Sistema entrado com sucesso");

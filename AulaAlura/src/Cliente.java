@@ -1,8 +1,5 @@
-public class Gerente extends Funcionario implements SenhaDoSistema{
+public class Cliente implements SenhaDoSistema{
     private int senha;
-    public double getBonificacao () {
-        return super.getSalario();
-    }
 
     @Override
     public boolean autentica(int senha) {
